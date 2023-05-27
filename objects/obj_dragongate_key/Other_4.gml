@@ -1,0 +1,1 @@
+if get_keyname("w1_secret") == true image_index = 1

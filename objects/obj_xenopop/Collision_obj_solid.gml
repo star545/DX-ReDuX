@@ -1,0 +1,1 @@
+if state == states.chase instance_destroy()

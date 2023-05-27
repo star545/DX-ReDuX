@@ -1,0 +1,23 @@
+{
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "sfx_comboend_nice",
+  "audioGroupId": {
+    "name": "audiogroup_default",
+    "path": "audiogroups/audiogroup_default",
+  },
+  "bitDepth": 1,
+  "bitRate": 128,
+  "compression": 0,
+  "conversionMode": 0,
+  "duration": 2.807375,
+  "parent": {
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
+  },
+  "preload": false,
+  "sampleRate": 44100,
+  "soundFile": "sfx_comboend_nice.ogg",
+  "type": 1,
+  "volume": 0.0,
+}

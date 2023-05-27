@@ -1,0 +1,1 @@
+msg = "First time seeing an Arena? Go to the door at the bottom to learn what they're all about!"

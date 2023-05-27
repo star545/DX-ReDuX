@@ -1,0 +1,1 @@
+if other.thrown instance_destroy()

@@ -1,0 +1,7 @@
+ini_open_from_string(obj_savesystem.ini_str)
+highscore = ini_read_real("Highscore", "exit", 0)
+rank = ini_read_string("Ranks", "exit", -4)
+best_time = ini_read_real("Time", "exit", 0)
+ini_close()
+rank_as_num = rank_checker(rank)
+percent = get_level_pct("exit")

@@ -1,0 +1,1 @@
+create_collect(x + irandom_range(-40, 40), y + irandom_range(-40, 40), choose(spr_shroomcollect, spr_tomatocollect, spr_cheesecollect, spr_sausagecollect, spr_pineapplecollect));

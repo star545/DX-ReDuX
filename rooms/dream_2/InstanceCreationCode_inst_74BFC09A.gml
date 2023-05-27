@@ -1,0 +1,1 @@
+prompt_array = [tv_create_prompt(choose("So this is what the inner workings of a pizzaman look like..."), tvprompt.trigger, spr_tv_exprheat, 2), tv_create_prompt(choose("I sure wouldn't want to end up like this! I'm terrified!"), tvprompt.trigger, spr_tv_exprheat, 2)]

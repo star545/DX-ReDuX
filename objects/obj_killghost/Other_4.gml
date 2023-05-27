@@ -1,0 +1,2 @@
+instance_destroy(obj_trapghost)
+instance_destroy()

@@ -1,0 +1,1 @@
+instance_create(x, y, parried ? obj_playerexplosion : obj_canonexplosion)

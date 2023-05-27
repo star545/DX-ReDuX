@@ -1,0 +1,1 @@
+if get_keypieces() >= 25 && get_progress() >= 3 instance_destroy()

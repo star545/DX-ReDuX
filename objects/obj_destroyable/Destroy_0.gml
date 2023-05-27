@@ -1,0 +1,50 @@
+if irandom_range(0, 10) == 0
+	instance_create(x, y, obj_pizzacoin)
+if (room == custom_lvl_room)
+	tile_layer_delete_at(1, x, y)
+if (ds_list_find_index(global.saveroom, id) == -1)
+{
+	var spr = global.sugary ? spr_ss_debrisbig : spr_towerblockdebris
+	
+	repeat (2)
+	{
+		with (create_debris((x + random_range(0, sprite_width)), (y + random_range(0, sprite_height)), particlespr, animate))
+		{
+			hsp = random_range(-5, 5)
+			vsp = random_range(-10, 10)
+			image_speed = 0.35
+		}
+	}
+
+
+	
+		with (instance_create((x + random_range(0, sprite_width)), (y + random_range(0, sprite_width)), obj_parryeffect))
+		{
+			sprite_index = other.dustspr
+			image_speed = 0.35
+		}
+	
+	scr_sleep(5)
+	tile_layer_delete_at(1, x, y)
+	if (audio_is_playing(sfx_breakblock1) or audio_is_playing(sfx_breakblock2))
+	{
+		audio_stop_sound(sfx_breakblock1)
+		audio_stop_sound(sfx_breakblock2)
+	}
+	scr_soundeffect(sfx_breakblock1, sfx_breakblock2)
+	ds_list_add(global.saveroom, id)
+}
+if instance_exists(obj_arenamode_controller) && !arena {
+	if (ds_list_find_index(global.arenaroom, id) == -1)
+		ds_list_add(global.arenaroom, id)
+	with instance_create(xstart, ystart, obj_arenaghost) {
+		contentID = other.id
+		ontouch = true
+		content = other.object_index
+		image_xscale = other.image_xscale
+        image_yscale = other.image_yscale
+        sprite_index = other.sprite_index
+		
+	}	
+	
+}

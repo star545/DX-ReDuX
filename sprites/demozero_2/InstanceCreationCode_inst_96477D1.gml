@@ -1,0 +1,1 @@
+targetRoom = demozero_2_escape

@@ -1,0 +1,22 @@
+if (other.state != states.gotoplayer)
+{
+	if (obj_player1.character == "V")
+		global.playerhealth = clamp((global.playerhealth + 10), 0, 100)
+	global.heattime = 60
+	with (obj_camera)
+		healthshaketime = 60
+	var a = get_chardetail("sfx", "bigcollect")
+	scr_soundeffect(a[irandom(array_length(a) - 1)])
+	instance_destroy()
+	global.combotime = 60
+	var val = heat_calculate(100)
+	if (other.object_index == obj_player1)
+		global.collect += val
+	else
+		global.collectN += val
+	create_collect(x, y, sprite_index)
+	with (instance_create((x + 16), y, obj_smallnumber))
+		number = string(val)
+		with obj_arenamode_controller if !dead time += 60	
+	tv_do_expression(obj_tv.tv_collect, 60)
+}

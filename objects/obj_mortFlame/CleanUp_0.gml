@@ -1,0 +1,2 @@
+//ds_list_destroy(pierce_list)
+audio_stop_sound(sfx_firemouthambience)

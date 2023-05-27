@@ -1,0 +1,9 @@
+grav = 0.5
+hsp = 0
+vsp = 0
+elite = 0
+shatter = 0
+parried = false
+image_speed = 0.4
+alarm[0] = 5
+team = 0

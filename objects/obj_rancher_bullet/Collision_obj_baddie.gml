@@ -1,0 +1,1 @@
+if parried instance_destroy(other.id)

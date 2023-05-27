@@ -1,0 +1,1 @@
+if get_keyname("w3_secret") == true instance_destroy(id, false)

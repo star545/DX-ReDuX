@@ -1,0 +1,1 @@
+if global.death_mode instance_destroy(id, false)

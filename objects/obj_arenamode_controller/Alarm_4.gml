@@ -1,0 +1,1 @@
+instance_create(camx - 100, obj_player1.y, obj_taxi_cutscenedead)

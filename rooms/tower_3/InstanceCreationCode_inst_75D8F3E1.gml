@@ -1,0 +1,1 @@
+if quick_ini_read_real("BabyPeppino", "event2", 0) > 1 && get_keypieces() >= 5 && get_progress() >= 1 instance_destroy()

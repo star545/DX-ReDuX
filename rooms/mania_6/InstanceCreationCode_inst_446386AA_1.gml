@@ -1,0 +1,1 @@
+targetRoom = mania_4

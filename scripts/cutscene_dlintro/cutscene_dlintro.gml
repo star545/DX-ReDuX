@@ -1,0 +1,3 @@
+function cutscene_dlintro(){
+		
+}

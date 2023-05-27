@@ -1,0 +1,10 @@
+fall = 0
+fallmax = 30
+fallbuffer = fallmax
+hsp = 0
+vsp = 0
+grav = 0.5
+tile = [0]
+depth = 99
+for (var i = 0; i < abs(((sprite_width / 32) - 2)); i++)
+    tile[i] = irandom(1)

@@ -1,0 +1,9 @@
+time = time_in_frames(0, 11) - 1
+show_time = time_in_frames(0, 2)
+dead = 0
+active = false
+surf = -4
+surfy = 100
+time_fx = 10
+time_fx_y = 0
+surfscale = 0.5

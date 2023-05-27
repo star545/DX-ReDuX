@@ -1,0 +1,2 @@
+msg = @"When you are done, you can simply exit the level to save your score.
+However, leaving through the exit gate, which opens for a limited time every 5 rounds, allows you to save your score aswell as earning you a rank!"

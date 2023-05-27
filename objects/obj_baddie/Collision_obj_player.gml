@@ -1,0 +1,1 @@
+if global.ghostkiller instance_destroy()

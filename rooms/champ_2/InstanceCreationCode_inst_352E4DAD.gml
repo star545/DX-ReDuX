@@ -1,0 +1,1 @@
+targetRoom = champ_secret1

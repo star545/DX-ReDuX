@@ -1,0 +1,1 @@
+surface_free(prev_pal)

@@ -1,0 +1,6 @@
+draw_set_alpha(1)
+draw_set_color(c_white)
+draw_self()
+draw_set_color(c_black)
+draw_set_alpha(pg_alpha)
+draw_rectangle(-32, -32, 980, 600, 0)

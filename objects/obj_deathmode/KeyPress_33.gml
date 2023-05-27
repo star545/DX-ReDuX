@@ -1,0 +1,1 @@
+//time += time_in_frames(0, 10)

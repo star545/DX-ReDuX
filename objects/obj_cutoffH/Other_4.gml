@@ -1,0 +1,1 @@
+//if layer_exists("Tiles_Foreground1") || layer_exists("Tiles_Foreground2") || layer_exists("Tiles_Foreground3") depth = -50

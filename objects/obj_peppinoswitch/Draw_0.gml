@@ -1,0 +1,5 @@
+shader_set(global.Pal_Shader)
+var use_pal = max(1, obj_player1.paletteselect)
+pal_swap_set(obj_player1.spr_palette, use_pal ,false)
+draw_self()
+pal_swap_reset()

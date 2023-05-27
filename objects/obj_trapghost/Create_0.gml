@@ -1,0 +1,11 @@
+if (instance_number(object_index) > 1)
+{
+	instance_destroy()
+	exit;
+}
+state = states.normal
+trapid = -4
+image_speed = 0.35
+depth = -50
+image_alpha = 0.75
+scr_controlprompt("[spr_promptfont]Watch out for King Ghost's traps!")

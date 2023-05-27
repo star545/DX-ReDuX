@@ -1,0 +1,1 @@
+if (instance_exists(ID)) { ID.hitboxcreate = 0 ID.hitboxID = -4 }
