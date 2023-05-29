@@ -158,6 +158,7 @@ room_arr = [
 	// Basement
 	
 	// DXtras
+	[hub_hall, mu_top, mu_top, false],
 	[mania_1, mu_dungeondepth, mu_pinballsecret, false],
 	[bath_1, mu_bath, mu_medievalsecret, false],
 	[calzone_1, mu_calzone, mu_medievalsecret, false],

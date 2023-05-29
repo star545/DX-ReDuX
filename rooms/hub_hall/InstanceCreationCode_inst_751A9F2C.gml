@@ -1,0 +1,9 @@
+text = "This room isn't set yet!\nExit the level to leave this room.\n\n\nNo way? No way!"
+xorigin = 1
+yorigin = 0
+font = global.promptfont
+obj_player.state = states.titlescreen
+obj_player.x = -87
+obj_player.y = 619
+global.showhud = false
+global.leveltorestart = Realtitlescreen

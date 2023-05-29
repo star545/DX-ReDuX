@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_hamburger",
+  "name": "obj_dx",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_mach4block",
-    "path": "sprites/spr_mach4block/spr_mach4block.yy",
+    "name": "spr_FAULT",
+    "path": "sprites/spr_FAULT/spr_FAULT.yy",
   },
   "spriteMaskId": null,
   "visible": true,

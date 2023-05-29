@@ -67,7 +67,7 @@ function scr_player_Sjump()
 			xscale = move
 		image_index = 0
 		sprite_index = spr_sjumpcancel_start
-		if (if_char(characters.pizzelle) || if_char(characters.noise)) || (global.sjumpstyle == 1) {
+		if (if_char(characters.noise)) || (global.sjumpstyle == 1) {
 			vsp = -5
 			movespeed = 12
 			flash = true;

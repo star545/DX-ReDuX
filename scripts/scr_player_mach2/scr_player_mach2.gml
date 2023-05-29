@@ -53,7 +53,7 @@ function scr_player_mach2()
 	{
 		if (machpunchAnim == 0 && sprite_index != spr_mach && sprite_index != spr_mach1 && sprite_index != spr_mach4 && sprite_index != spr_player_machhit)
 		{
-			if (sprite_index != spr_player_machhit && sprite_index != spr_rollgetup && sprite_index != spr_suplexdash && sprite_index != spr_taunt && sprite_index != spr_player_Sjumpcancelstart)
+			if (sprite_index != spr_player_machhit && sprite_index != spr_rollgetup && sprite_index != spr_suplexdash && sprite_index != spr_taunt && ((sprite_index != spr_player_Sjumpcancelstart && sprite_index != spr_pizzelle_Sjumpcancel) && sprite_index != spr_pizzelle_Sjumpcancel))
 				sprite_index = spr_mach
 		}
 		if (machpunchAnim == 1)
@@ -117,7 +117,7 @@ function scr_player_mach2()
 		sprite_index = spr_mach
 	if (floor(image_index) == (image_number - 1) && sprite_index == spr_suplexdash)
 		sprite_index = spr_mach
-	if ((!grounded) && sprite_index != spr_secondjump2 && sprite_index != spr_clownjump && sprite_index != spr_clownfall && sprite_index != spr_mach2jump && sprite_index != spr_mach2jump && sprite_index != spr_walljumpstart && sprite_index != spr_taunt && sprite_index != spr_player_Sjumpcancelstart && sprite_index != spr_walljumpend && sprite_index != spr_player_longjump && sprite_index != spr_player_longjumpend)
+	if ((!grounded) && sprite_index != spr_secondjump2 && sprite_index != spr_clownjump && sprite_index != spr_clownfall && sprite_index != spr_mach2jump && sprite_index != spr_mach2jump && sprite_index != spr_walljumpstart && sprite_index != spr_taunt && (sprite_index != spr_player_Sjumpcancelstart && sprite_index != spr_pizzelle_Sjumpcancel) && sprite_index != spr_walljumpend && sprite_index != spr_player_longjump && sprite_index != spr_player_longjumpend)
 	{
 		sprite_index = spr_secondjump1
 		if skateboarding

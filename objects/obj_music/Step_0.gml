@@ -39,8 +39,8 @@ if global.panic && !global.death_mode {
 	unforce_cont = true
 } else unforce_cont = false
 
-if global.panic && global.death_mode {
-	if escapemusic != -4 && escapemusic == mu_snickchallengeend _song = escapemusic {
+if global.panic {
+	if escapemusic != -4 && _song == escapemusic {
 		unforce_cont = true
 	}
 } else unforce_cont = false

@@ -33,7 +33,7 @@ else
 	p2pdistancex = 0
 if (floor(image_index) == 10)
 	shoving = 0
-if (room == strongcold_endscreen || (is_hub() && !global.panic) || room == rm_eggplantdisclaimer or room == rm_levelselect or room == timesuproom or room == Realtitlescreen or room == characterselect or room == hub_loadingscreen)
+if (room == strongcold_endscreen || (is_hub() && !global.panic) || room == rm_eggplantdisclaimer or room == rm_levelselect or room == timesuproom or room == Realtitlescreen or room == characterselect or room == hub_hall or room == hub_loadingscreen)
 	visible = false
 else
 	visible = true
@@ -221,13 +221,13 @@ if (instance_exists(player) && player.state != states.timesup && player.state !=
 		if (targetgolf != noone && (!instance_exists(targetgolf)))
 			targetgolf = noone
 			
-		var _left_limit = !obj_player1.super_mario || room == Realtitlescreen ? 0 : -192	
-		var _right_limit = !obj_player1.super_mario || room == Realtitlescreen ? (room_width - cam_width) : (room_width - cam_width) + 192
+		var _left_limit = !obj_player1.super_mario || room == Realtitlescreen || room == hub_hall ? 0 : -192	
+		var _right_limit = !obj_player1.super_mario || room == Realtitlescreen || room == hub_hall ? (room_width - cam_width) : (room_width - cam_width) + 192
 			
 			
 		if (targetgolf == noone)
 		{
-			if ((!global.coop) or room == characterselect or room == rm_levelselect or room == Realtitlescreen)
+			if ((!global.coop) or room == characterselect or room == rm_levelselect or room == Realtitlescreen || room == hub_hall)
 			{
 				var cam_x = (((target.x - (cam_width / 2)) + chargecamera) + p2pdistancex)
 				var cam_y = ((target.y - (cam_height / 2)) - 50 + chargecamera_y)

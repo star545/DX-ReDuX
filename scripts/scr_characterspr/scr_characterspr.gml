@@ -1077,6 +1077,9 @@ function scr_characterspr()
 		
 		spr_faceplant = spr_pizzelle_tumble
 		
+		spr_sjumpcancel = spr_pizzelle_Sjumpcancel
+		spr_sjumpcancel_start = spr_pizzelle_Sjumpcancelstart
+		
 		spr_rankd = spr_rankPZD
 		spr_rankc = spr_rankPZC
 		spr_rankb = spr_rankPZB

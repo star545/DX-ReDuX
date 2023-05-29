@@ -137,7 +137,7 @@ function scr_player_mach3()
 			sprite_index = spr_mach4
 		if (floor(image_index) == (image_number - 1) && (sprite_index == spr_rollgetup || sprite_index == spr_mach3hit || sprite_index == spr_dashpadmach))
 			sprite_index = spr_mach4
-		if (sprite_index != spr_player_sidesuperjumpcancel && movespeed > 16 && sprite_index != spr_crazyrun && sprite_index != spr_player_Sjumpcancelstart && sprite_index != spr_taunt && sprite_index != spr_player_supersidejump)
+		if (sprite_index != spr_player_sidesuperjumpcancel && movespeed > 16 && sprite_index != spr_crazyrun && ((sprite_index != spr_player_Sjumpcancelstart && sprite_index != spr_pizzelle_Sjumpcancel) && sprite_index != spr_pizzelle_Sjumpcancel) && sprite_index != spr_taunt && sprite_index != spr_player_supersidejump)
 		{
 			mach4mode = 1
 			flash = 1
@@ -167,7 +167,7 @@ function scr_player_mach3()
 		
 		if (grounded && vsp > 0) {
 		jumpstop = 0
-			if sprite_index = spr_player_Sjumpcancel {
+			if ((sprite_index == spr_player_Sjumpcancelstart || sprite_index == spr_pizzelle_Sjumpcancel) && sprite_index != spr_pizzelle_Sjumpcancel) {
 				image_index = 0
 				sprite_index = spr_rollgetup
 			}
@@ -377,7 +377,7 @@ function scr_jetpack_mach3() {
 	if key_down vsp = 3
 
 	
-	if (movespeed > 16 && sprite_index != spr_crazyrun && sprite_index != spr_player_Sjumpcancelstart && sprite_index != spr_taunt)
+	if (movespeed > 16 && sprite_index != spr_crazyrun && ((sprite_index != spr_player_Sjumpcancelstart && sprite_index != spr_pizzelle_Sjumpcancel) && sprite_index != spr_pizzelle_Sjumpcancel) && sprite_index != spr_taunt)
 	{
 		mach4mode = 1
 		flash = 1
