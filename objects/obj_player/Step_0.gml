@@ -210,7 +210,7 @@ if state != states.jetpackjump && state != states.chainsaw {
 	jetpackbounce = 0
 }
 
-if (room == Realtitlescreen || room = credits) && state != states.titlescreen && !instance_exists(obj_fadeout) {
+if (room == hub_hall || room == Realtitlescreen || room = credits) && state != states.titlescreen && !instance_exists(obj_fadeout) {
 	state = states.titlescreen
 	x = -100
 	y = -100

@@ -169,8 +169,8 @@ room_arr = [
 	[tower_entrancesmip, mu_hubsecret, mu_medievalsecret, false],
 	[tower_smiparenasecret, mu_arenatutorial, mu_arenatutorial, false],
 	[demozero_1, mu_ruinremix, mu_ruinsecret, false],
-	[tower_arenaroom, mu_gustavo, mu_gustavo, false]
-	
+	[tower_arenaroom, mu_gustavo, mu_gustavo, false],
+	[train_1, mu_train, mu_medievalsecret, false]
 	
 	//[tower_finalhallway, mu_finalescape, mu_dungeonsecret, false]
 ]

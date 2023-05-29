@@ -22,11 +22,12 @@ function Instakill(_xscale = xscale)
 			sprite_index = spr_mach3hit
 			image_index = 0
 		}
+		/* man i HATE this little slice of code this shit Sucks let's remove it - me
 		if (state == states.chainsawbump && sprite_index != spr_player_chainsawhit) {
 			image_index = 0
 			sprite_index = spr_player_chainsawhit
 		}
-
+		*/
 		if !grounded && state != states.boxxedpepspin && state != states.chainsawpogo && state != states.freefall && (key_jump2 or input_buffer_jump == 0)
 		{
 			if (state == states.mach3 && fightball == 0)
