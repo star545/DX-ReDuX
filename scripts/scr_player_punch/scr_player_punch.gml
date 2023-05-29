@@ -36,8 +36,8 @@ function scr_player_punch()
 			punch_afterimage = 5
 			create_mach3effect(x, y, sprite_index, image_index, xscale)
 		}
-		if global.sidemove == 2 && !shotgunAnim && !mortGun && key_shoot2 scr_shotgunshoot()
-		if global.attackstyle != 2 {
+		if (global.sidemove == 2 || character == characters.jetpack_noise || character == characters.noise) && !shotgunAnim && !mortGun && key_shoot2 scr_shotgunshoot()
+		if global.attackstyle != 2 && character != characters.jetpack_noise && character != characters.noise {
 			if move != 0 xscale = move	
 			scr_dograb()
 			
