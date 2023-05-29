@@ -167,7 +167,7 @@ function scr_player_mach3()
 		
 		if (grounded && vsp > 0) {
 		jumpstop = 0
-			if ((sprite_index == spr_player_Sjumpcancelstart || sprite_index == spr_pizzelle_Sjumpcancel) && sprite_index != spr_pizzelle_Sjumpcancel) {
+			if ((sprite_index == spr_player_Sjumpcancelstart || sprite_index == spr_pizzelle_Sjumpcancel)) {
 				image_index = 0
 				sprite_index = spr_rollgetup
 			}
