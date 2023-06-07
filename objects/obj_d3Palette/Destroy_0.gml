@@ -11,6 +11,7 @@ repeat 3 { save_custom_colors(characters.snick, i) i++ }
 i = 0
 repeat 3 { save_custom_colors(characters.jetpack_noise, i) i++ }
 i = 0
+repeat 3 { save_custom_colors(characters.vigilante, i) i++ }
 
 
 instance_activate_object(obj_player)

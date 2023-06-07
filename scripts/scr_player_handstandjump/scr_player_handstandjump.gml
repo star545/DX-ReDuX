@@ -1,5 +1,7 @@
 function scr_player_handstandjump()
 {	
+	if (sprite_index == spr_player_slapdash || sprite_index == spr_player_slaprun1) && (animation_end() || grounded) state = states.mach2
+	
 	if sprite_index == spr_playerN_spinstart && animation_end() sprite_index = spr_playerN_spin
 	if sprite_index == spr_playerN_spin && animation_end() state = states.mach2
 	if sprite_index == spr_playerN_spinend && animation_end() state = states.mach2
@@ -49,10 +51,10 @@ function scr_player_handstandjump()
 	        if (global.attackstyle == 1)
 	            if character != characters.snick {
 					sprite_index = airattackdashstart
-					if character == characters.noise || character == characters.jetpack_noise {
+					if (character == characters.noise || character == characters.jetpack_noise) && (sprite_index != spr_playerN_spinstart || sprite_index != spr_playerN_spin) {
 						sprite_index = spr_playerN_spinstart
 						scr_soundeffect_3d(sfx_Nspin)
-						movespeed = 12
+						movespeed = movecap(movespeed, 10)
 					}
 				}
 	        else
@@ -60,7 +62,7 @@ function scr_player_handstandjump()
 	            state = states.mach2
 	            sprite_index = spr_player_longjump
 				if character != characters.peppino sprite_index = spr_mach2jump
-				if character = characters.jetpack_noise {
+				if character == characters.jetpack_noise {
 					sprite_index = spr_playerN_pogostart
 					image_index = 0
 					state = states.pogo
@@ -75,7 +77,8 @@ function scr_player_handstandjump()
 				if character == characters.noise || character == characters.jetpack_noise {
 						sprite_index = spr_playerN_spinstart
 						scr_soundeffect_3d(sfx_Nspin)
-						movespeed = 12
+						
+						movespeed = movecap(movespeed, 10)
 					}
 		}
 		if (grounded && sprite_index == airattackdash && global.attackstyle != 2)
@@ -101,8 +104,8 @@ function scr_player_handstandjump()
 		
 		}
 		if (floor(image_index) == (image_number - 1) && sprite_index == airattackdashstart)
-			if character != characters.snick sprite_index = airattackdash
-		if (floor(image_index) == (image_number - 1) && key_attack && sprite_index == attackdash)
+			sprite_index = airattackdash
+		if (floor(image_index) == (image_number - 1) && key_attack && (sprite_index == attackdash || sprite_index == spr_player_slapdash || sprite_index == spr_player_slaprun1))
 		{
 			image_speed = 0.35
 			state = states.mach2
@@ -182,12 +185,24 @@ function scr_player_handstandjump()
 			sprite_index = spr_faceplant;
 			image_index = 0;
 			image_speed = 0.2;
+			if if_char(characters.peppino) {
+				sprite_index = spr_player_charge
+				image_speed = 0.35;
+			}
 			state = states.faceplant;		
 			movespeed += 3
 		    with (instance_create(x, y, obj_jumpdust))
 		        image_xscale = other.xscale;
 		
 		}
+		if key_slap2 && (if_char(characters.noise) || if_char(characters.jetpack_noise)) {
+			movespeed = movecap(movespeed, 10)
+			state = states.faceplant;		
+		    with (instance_create(x, y, obj_jumpdust))
+		        image_xscale = other.xscale;
+		
+		}
+		
 		if state != states.handstandjump && !ds_list_empty(local_grab_list) {
 			state = states.grab
 			sprite_index = spr_haulingstart

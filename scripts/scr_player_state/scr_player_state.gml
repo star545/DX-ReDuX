@@ -17,6 +17,9 @@ function scr_player_state() {
 		case states.normal:
 			_stateFunction = scr_player_normal;
 			break
+		case states.hangin:
+			_stateFunction = scr_player_hangin;
+			break
 		case states.spindash:
 			_stateFunction = scr_player_spindash;
 			break

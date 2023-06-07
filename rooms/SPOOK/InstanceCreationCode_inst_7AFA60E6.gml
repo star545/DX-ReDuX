@@ -1,0 +1,9 @@
+text = "erm this is gonna be scary later.... just Silly for now "
+xorigin = 1
+yorigin = 0
+font = global.promptfont
+obj_player.state = states.titlescreen
+obj_player.x = -87
+obj_player.y = 619
+global.showhud = false
+global.leveltorestart = Realtitlescreen

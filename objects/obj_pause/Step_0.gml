@@ -23,7 +23,7 @@ if (state = states.unpaused) {
 			if state == states.options || can_proceed _cutscenehandler = true	
 			
 		}
-		if (obj_savesystem.state == 0 && (!_cutscenehandler) && room != rank_room && room != Realtitlescreen && room != timesuproom && room != credits)
+		if (obj_savesystem.state == 0 && (!_cutscenehandler) && room != SPOOK && room != rank_room && room != Realtitlescreen && room != timesuproom && room != credits)
 		{
 			selected = 0
 			state = states.paused

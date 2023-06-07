@@ -49,7 +49,8 @@ function scr_player_machslide()
 			sprite_index = spr_mach4
 			image_index = 0
 			xscale *= -1
-			movespeed = 12
+			if character != characters.snick movespeed = 12
+			else movespeed = savedmvsp
 			state = states.mach3
 		}
 		else

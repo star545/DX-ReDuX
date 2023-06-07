@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Old Pizzelle",
-    "path": "folders/Sprites/HUD/Old Pizzelle.yy",
+    "name": "Peppino",
+    "path": "folders/Sprites/HUD/TV/Peppino.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

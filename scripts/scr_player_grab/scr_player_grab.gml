@@ -196,6 +196,12 @@ function scr_player_grab()
 		sprite_index = spr_haulingidle
 	if key_jump
 		input_buffer_jump = 0
+/*
+	if grounded && key_attack {
+		sprite_index = spr_player_charge
+		state = states.tacklecharge
+	}
+*/
 	if (grounded && input_buffer_jump < 8 && (!key_down) && (!key_attack) && vsp > 0 && sprite_index != spr_swingding)
 	{
 		scr_soundeffect(sfx_jump)

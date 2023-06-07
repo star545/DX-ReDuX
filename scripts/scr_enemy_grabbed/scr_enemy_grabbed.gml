@@ -18,11 +18,11 @@ function scr_enemy_grabbed()
 	var cur_pos = ds_list_find_index(my_list, id)
 	if (cur_pos > 0) f = ds_list_find_value(my_list, ds_list_find_index(my_list, id) - 1)
 	if (cur_pos == -1) set_to_normal()
-	if (player.state != states.grab && player.state != states.grabbing && player.state != states.slam && player.state != states.handstandjump && player.state != states.finishingblow &&  player.state != states.superslam) set_to_normal()
+	if ((player.state != states.grab && player.state != states.tacklecharge) && player.state != states.grabbing && player.state != states.slam && player.state != states.handstandjump && player.state != states.finishingblow &&  player.state != states.superslam) set_to_normal()
 		
 	//f.baddiegrabbedID = id
 	// Normal Grab anim Pos
-	if player.state == states.grabbing || player.state == states.grab || player.state == states.slam || player.state == states.handstandjump {
+	if player.state == states.grabbing || player.state == states.grab || player.state == states.tacklecharge || player.state == states.slam || player.state == states.handstandjump {
 		var _y = clamp((player.image_index - 1) * 10, 0, 40)
 		x = player.x
 		if (player.sprite_index != player.spr_haulingstart) y = f.y - 40
@@ -266,7 +266,7 @@ function scr_enemy_grabbed()
 		}
 	}
 	*/
-	if (player.state != states.grab && player.state != states.handstandjump)
+	if (player.state != states.grab && player.state != states.tacklecharge && player.state != states.handstandjump)
 	check_grabbed_solid(player)
 	sprite_index = stunfallspr
 	image_speed = 0.35

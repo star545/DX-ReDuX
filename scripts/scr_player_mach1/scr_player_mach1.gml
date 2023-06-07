@@ -221,9 +221,15 @@ function scr_pizelle_mach1() {
 	}
 	if key_down
 	{
-		sprite_index = spr_crouchslip
-		state = states.crouchslide
-		mach2 = 0
+			with (instance_create(x, y, obj_jumpdust))
+				image_xscale = other.xscale
+			movespeed = 12
+			crouchslipbuffer = 25
+			grav = 0.5
+			sprite_index = spr_crouchslip
+			image_index = 0
+			machhitAnim = 0
+			state = states.tumble
 	}
 	image_speed = 0.45
 	if (key_jump && grounded && key_attack)

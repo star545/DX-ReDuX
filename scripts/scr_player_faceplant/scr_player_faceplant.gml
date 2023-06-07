@@ -1,11 +1,24 @@
 function scr_player_faceplant()
 {
+	var pepcheck = if_char(characters.peppino)
+	if pepcheck && !audio_is_playing(sfx_mach3) scr_soundeffect(sfx_mach3)
 	hsp = (xscale * movespeed)
 	move = (key_right + key_left)
+	
 	if movespeed < 10 movespeed = Approach(movespeed, 10, grounded ? 0.5 : 10)
+
+	if pepcheck && input_buffer_jump < 8 && grounded && move != -xscale
+		{
+			scr_soundeffect(sfx_jump)
+			if (character == characters.peppino)
+				vsp = -11
+			else
+				vsp = -13
+	}
 
 	if bump_wall(sign(hsp))
 	{
+		audio_stop_sound(sfx_mach3)
 		sprite_index = spr_hitwall
 		scr_soundeffect(sfx_groundpound)
 		scr_soundeffect(sfx_bumpwall)
@@ -43,7 +56,7 @@ function scr_player_faceplant()
 	if anim_end()
 	{
 		if key_attack {
-		
+			audio_stop_sound(sfx_mach3)
 			state = states.mach2
 			sprite_index = spr_player_mach;
 
@@ -51,8 +64,10 @@ function scr_player_faceplant()
 			image_speed = 0.35;
 			state = states.normal;
 			grav = 0.5;
+			audio_stop_sound(sfx_mach3)
 		} else if !key_attack && bufferslap < 8 {
 			sprite_index = spr_faceplant;
+			if pepcheck sprite_index = spr_player_charge
 			image_index = 0;
 			with (instance_create(x, y, obj_jumpdust))
 				image_xscale = other.xscale		
@@ -62,6 +77,7 @@ function scr_player_faceplant()
 	image_speed = 0.35
 	if (key_down && grounded && vsp > 0)
 	{
+		audio_stop_sound(sfx_mach3)
 		grav = 0.5
 		sprite_index = spr_crouchslip
 		machhitAnim = 0

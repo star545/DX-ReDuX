@@ -1,5 +1,52 @@
 function scr_player_crouchjump()
 {
+	if input_buffer_jump2 == 0 {
+	{
+		input_buffer_slap = 8
+		if (!shotgunAnim)
+		{
+			sprite_index = spr_bodyslamstart
+			image_index = 0
+			state = states.freefall
+			if character = characters.pizzelle
+				state = states.freefallprep
+			vsp = -6
+			if global.arena_perks.slam vsp = 12
+		}
+		else
+		{
+			scr_soundeffect(sfx_killingblow)
+			sprite_index = spr_shotgunjump1
+			image_index = 0
+			state = states.freefall
+			vsp = -11
+			with (instance_create((x + (xscale * 30)), (y + 60), obj_shotgunbullet))
+			{
+				image_xscale = other.xscale
+				sprite_index = spr_bullet_sdown
+				spdh = -10
+				spd = 0
+				shotgun = 1
+			}
+			with (instance_create((x + (xscale * 30)), (y + 60), obj_shotgunbullet))
+			{
+				image_xscale = other.xscale
+				sprite_index = spr_bullet_sdown
+				spdh = -10
+				spd = 5
+				shotgun = 1
+			}
+			with (instance_create((x + (xscale * 30)), (y + 60), obj_shotgunbullet))
+			{
+				image_xscale = other.xscale
+				sprite_index = spr_bullet_sdown
+				spdh = -10
+				spd = -5
+				shotgun = 1
+			}
+		}
+	}
+	}
 	move = (key_left + key_right)
 	mask_index = spr_crouchmask
 	hsp = (move * movespeed)

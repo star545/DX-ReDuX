@@ -12,7 +12,9 @@ function scr_player_revolver()
 	if ((sprite_index == spr_playerV_revolverhold or sprite_index == spr_playerV_airrevolverstart or sprite_index == spr_playerV_revolverstart) && (!key_slap))
 	{
 		if grounded
-			sprite_index = spr_playerV_revolvershoot
+			if key_down2 {
+			}
+			else sprite_index = spr_playerV_revolvershoot
 		else
 			sprite_index = spr_playerV_airrevolver
 		image_index = 0

@@ -349,7 +349,7 @@ function state_player_jump()
 				image_index = 0
 				state = states.mach2
 				if character == characters.pizzelle
-					state = states.mach1
+					state = states.mach2
 				if (movespeed < 6)
 					movespeed = 6
 			}

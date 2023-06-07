@@ -1,3 +1,10 @@
+combo_state = 0
+combo_posX = 0
+combo_vsp = 0
+combo_posY = 0
+combofill_x = 0
+combofill_y = 0
+combofill_index = 0
 barflash = 0
 barblend = image_blend
 image_speed = 0.1

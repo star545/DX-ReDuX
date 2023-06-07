@@ -360,6 +360,7 @@ function scr_characterspr()
 		spr_bossintro = spr_playerN_bossintro
 		spr_hurtidle = spr_playerN_hurtidle
 		spr_hurtwalk = spr_playerN_hurtwalk
+		spr_faceplant = spr_playerN_spin
 		spr_suplexmash1 = spr_playerN_suplexmash1
 		spr_suplexmash2 = spr_playerN_suplexmash2
 		spr_suplexmash3 = spr_playerN_suplexmash3

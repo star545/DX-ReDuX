@@ -1,5 +1,5 @@
 
-if obj_player1.super_mario && room != Realtitlescreen {
+if obj_player1.super_mario && room != Realtitlescreen && room != SPOOK {
 	draw_sprite(spr_mariohud, 0, 0, 0) 
 	exit;	
 }

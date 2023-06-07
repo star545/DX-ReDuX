@@ -1,3 +1,5 @@
+if room == SPOOK shake_cam(5)
+
 prevpillar_on_camera = pillar_on_camera
 if instance_exists(obj_hungrypillar)
 {

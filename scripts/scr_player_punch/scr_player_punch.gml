@@ -119,7 +119,7 @@ function scr_player_punch()
 		if breakdance > 0
 			breakdance--
 		else if (sprite_index == spr_player_breakdanceloop || key_attack2) {
-			state = states.mach1
+			state = states.mach2
 			if move != 0
 				xscale = move
 	        movespeed = abs(hsp)

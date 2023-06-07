@@ -43,7 +43,7 @@ function scr_player_grabbed()
 				shake_mag_acc = (3 / room_speed)
 			}
 		}
-		if (!((state == states.grab or (state == states.mach3 && fightball == 1) or state == states.ratmount or state == states.ratmountattack or state == states.ratmountjump or state == states.ratmountspit or state == states.finishingblow or state == states.grabbing or state == states.throwing or state == states.slam or state == states.tacklecharge or state == states.punch or state == states.superslam or state == states.backkick or state == states.uppunch or state == states.shoulder)))
+		if (!((state == states.grab or state == states.tacklecharge or (state == states.mach3 && fightball == 1) or state == states.ratmount or state == states.ratmountattack or state == states.ratmountjump or state == states.ratmountspit or state == states.finishingblow or state == states.grabbing or state == states.throwing or state == states.slam or state == states.tacklecharge or state == states.punch or state == states.superslam or state == states.backkick or state == states.uppunch or state == states.shoulder)))
 		{
 			baddiegrabbedID = obj_null
 			other.x = _obj_player.x

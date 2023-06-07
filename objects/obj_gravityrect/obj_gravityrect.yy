@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "pto",
-    "path": "folders/Objects/level_structure/pto.yy",
+    "name": "Room structure",
+    "path": "folders/Objects/Room structure.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -30,7 +30,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "sprite10291",
+    "path": "sprites/sprite10291/sprite10291.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

@@ -1,5 +1,7 @@
 function state_player_normal()
 {
+	
+	
 	mach2 = 0
 	move = (key_left + key_right)
 	//skateboarding = 0
@@ -319,7 +321,7 @@ function state_player_normal()
 				image_index = 0
 				state = states.mach2
 				if character = characters.pizzelle
-					state = states.mach1
+					state = states.mach2
 				if (movespeed < 6)
 					movespeed = 6
 			}

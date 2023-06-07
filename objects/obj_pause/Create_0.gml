@@ -323,6 +323,35 @@ char_options[characters.noise] = {
 }
 // note, please only edit the normal noise stuff and just copy it over 2 jetpacks....
 
+char_options[characters.vigilante] = {
+	name : "VIGILANTE",
+	tv_spr : spr_tv_vigi,
+	idle_spr : spr_playerV_idle,
+	sel_spr : spr_playerV_taunt,
+	pal_spr : spr_vigipalette,
+	sel_pal : 1,
+	pal_details : [
+	["CUSTOM : NOT EDITING", "Press up to start editing palettes!"],
+	["THE VIGILANTE", "Outlaws beware..."],
+	["HEAT", "Things are getting crazy..."],
+	["EGGPLANT", "Delicious!"],
+	["HARD-O-WEEN", "Orange you glad I didn't say banana?"],
+	["DESERTER", "Hey, I've seen this one!"],
+	["SNOTTY", "Armed to the teeth!"],
+	["GUTTER", "Crunchy!"],
+	["GOLD", "Ez P Rank GG No re"],
+	["SOFT", "Who likes cheese soft?"],
+	["GRUNCH", "Choose wisely."],
+	["GUMBOB", "Finally, a finished character!"],
+	["MARTIAN", "Pizza Tower OST - Extraterrestrial Wah Wahs"],
+	["MOLDY", "Moldy Vigilante molds you."],
+	["GHASTLY", "Ooouutlaaws beeewaaare..."],
+	["RETRO", "Rubberhouse"]
+	
+	
+	]
+}
+
 char_options[characters.snick] = {
 	name : "SNICK",
 	tv_spr : spr_pizzy_tv,

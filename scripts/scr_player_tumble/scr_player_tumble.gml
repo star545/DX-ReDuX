@@ -1,5 +1,9 @@
 function scr_player_tumble()
 {
+	
+	if key_jump2
+		input_buffer_jump = 0
+	
 	if place_meeting(x, (y + 1), obj_railparent)
 	{
 		var _railinst = instance_place(x, (y + 1), obj_railparent)
@@ -48,8 +52,24 @@ function scr_player_tumble()
 		image_index = 0
 		sprite_index = spr_machroll
 	}
-	if (sprite_index == spr_crouchslip && (!grounded))
+	if ((sprite_index == spr_crouchslip && (!grounded)) || sprite_index == spr_player_jumpdive1 && anim_end())
 		sprite_index = spr_player_jumpdive2
+	else if sprite_index == spr_crouchslip {
+		
+	if (input_buffer_jump == 0)
+	{
+		scr_soundeffect(sfx_jump)
+		sprite_index = spr_player_jumpdive1
+		image_index = 0
+		vsp = -11
+		jumpstop = 1
+		with (instance_create(x, y, obj_superdashcloud))
+		{
+			image_xscale = other.xscale
+			other.dashcloudid = id
+		}
+	}
+	}
 	if (sprite_index == spr_player_Sjumpcancelland && floor(image_index) == (image_number - 1))
 		sprite_index = spr_player_Sjumpcancelslide
 	if (sprite_index == spr_player_jumpdive2 && grounded)

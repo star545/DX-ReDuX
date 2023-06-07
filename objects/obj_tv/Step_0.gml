@@ -3,7 +3,7 @@ if barflash > 0 {
 }
 else barblend = image_blend
 //scr_tvsprites()
-if (room == hub_hall || room == Realtitlescreen or room == rm_eggplantdisclaimer or room == rank_room or room == rm_levelselect or room == timesuproom or room == boss_room1 or room == characterselect or room == hub_loadingscreen)
+if (room == SPOOK || room == hub_hall || room == Realtitlescreen or room == rm_eggplantdisclaimer or room == rank_room or room == rm_levelselect or room == timesuproom or room == boss_room1 or room == characterselect or room == hub_loadingscreen)
 {
 	visible = false
 }

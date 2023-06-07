@@ -34,6 +34,9 @@ function scr_player_superslam()
 	stopAnim = 1
 	crouchslideAnim = 1
 	crouchAnim = 1
+	
+
+	
 	if (sprite_index == spr_piledriverland && floor(image_index) == (image_number - 1))
 	{
 		vsp = -6

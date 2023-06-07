@@ -384,7 +384,8 @@ states.rocketslide,
 states.flick,
 states.victory,
 states.cotton,
-states.spindash
+states.spindash,
+states.hangin
 ]
 c = 0
 stallblock = 0
@@ -671,6 +672,7 @@ angle = 0
 mach4mode = 0
 railmomentum = 0
 railmovespeed = 0
+savedmvsp = 0
 raildir = 1
 boxxed = 0
 boxxeddash = 0

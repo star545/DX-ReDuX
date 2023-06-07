@@ -27,6 +27,7 @@ global.color_array[characters.snick] = [load_custom_colors(characters.snick, "0"
 global.color_array[characters.noise] = [load_custom_colors(characters.noise, "0"), load_custom_colors(characters.noise, "1"), load_custom_colors(characters.noise, "2")]
 global.color_array[characters.jetpack_noise] = [load_custom_colors(characters.jetpack_noise, "0"), load_custom_colors(characters.jetpack_noise, "1"), load_custom_colors(characters.jetpack_noise, "2")]
 global.color_array[characters.pizzelle] = [load_custom_colors(characters.pizzelle, "0"), load_custom_colors(characters.pizzelle, "1"), load_custom_colors(characters.pizzelle, "2")]
+global.color_array[characters.vigilante] = [load_custom_colors(characters.vigilante, "0"), load_custom_colors(characters.vigilante, "1"), load_custom_colors(characters.vigilante, "2")]
 global.color_array[characters.gus] = [load_custom_colors(characters.gus, "0"), load_custom_colors(characters.gus, "1"), load_custom_colors(characters.gus, "2")]
 Export = {
 active : false,

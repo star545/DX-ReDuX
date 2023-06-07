@@ -72,7 +72,7 @@ function scr_player_mach3()
 		}
 		else {
 			sprite_index = spr_player_supersidejump
-			if (character == characters.peppino && key_jump2)
+			if (global.sjumpstyle == 2 && key_jump2)
 			{
 				scr_soundeffect(sfx_jump)
 				scr_soundeffect(sfx_woosh)
@@ -198,6 +198,7 @@ function scr_player_mach3()
 		}
 		if (move == (-xscale) && grounded && (!launched) && sprite_index != spr_dashpadmach)
 		{
+			savedmvsp = movespeed
 			scr_soundeffect(sfx_machslideboost)
 			sprite_index = spr_mach3boost
 			state = states.machslide
@@ -230,8 +231,9 @@ function scr_player_mach3()
 		}
 		scr_dograb()
 		if (key_shoot2) scr_shotgunshoot()
-		if (key_up && character != characters.vigilante && fightball == 0 && (grounded || character == characters.snick) && sprite_index != spr_dashpadmach && (!(place_meeting(x, y, obj_dashpad))))
+		if (key_up && fightball == 0 && (grounded || character == characters.snick) && sprite_index != spr_dashpadmach && (!(place_meeting(x, y, obj_dashpad))))
 		{
+			savedmvsp = movespeed
 			sprite_index = spr_superjumpprep
 			state = states.Sjumpprep
 			hsp = 0

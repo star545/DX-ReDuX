@@ -1,5 +1,10 @@
 function scr_player_freefall()
 {
+	if key_slap2 {
+		scr_soundeffect(sfx_machpunch)
+		sprite_index = spr_player_slapdash
+		state = states.handstandjump
+	}
 	landAnim = 1
 	if (vsp >= 2)
 		vsp += 0.5

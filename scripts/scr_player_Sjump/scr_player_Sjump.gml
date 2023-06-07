@@ -84,7 +84,7 @@ function scr_player_Sjump()
 	if (sprite_index == spr_sjumpcancel_start)
 	{
 		vsp = 0
-        if character = characters.peppino || global.sjumpstyle == 2 hsp = 0
+        if global.sjumpstyle == 2 hsp = 0
         if character = characters.jetpack_noise hsp = 0
         if (move != 0)
             xscale = move
@@ -106,6 +106,7 @@ function scr_player_Sjump()
             sprite_index = spr_sjumpcancel
             if global.sjumpstyle == 2
                 sprite_index = spr_player_supersidejump
+			if if_char(characters.pizzelle) movespeed = savedmvsp
             state = states.mach3
             with (instance_create(x, y, obj_crazyruneffect))
                 image_xscale = other.xscale

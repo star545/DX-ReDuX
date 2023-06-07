@@ -1,5 +1,9 @@
 function scr_player_slam()
 {
+	if key_slap2 {
+		sprite_index = spr_player_slapdash
+		state = states.handstandjump
+	}
 	if (windingAnim < 200)
 		windingAnim += 5
 	move = (key_left + key_right)

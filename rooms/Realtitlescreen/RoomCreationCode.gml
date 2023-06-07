@@ -13,16 +13,19 @@ global.textures_saved = -4
 #macro DEBUG true
 
 
+
+
 enum characters {
 	peppino,
 	snick,
 	jetpack_noise,
 	noise,
+	vigilante,
 	pizzelle,
 	gus,
 	mario,
+	bastard,
 	bo_noise,
-	vigilante,
 	
 
 	pizzano,
@@ -33,6 +36,7 @@ enum characters {
 enum states
 {
 	normal,
+	hangin,
 	spindash,
 	revolver,
 	dynamite,
@@ -443,6 +447,34 @@ global.charDetails[characters.peppino] = {
 	}
 }
 
+global.charDetails[characters.bastard] = {
+	name: "Bastard",
+	machcolor1 : make_colour_rgb(96, 208, 72),
+	machcolor2 : make_colour_rgb(248, 0, 0),
+	palette: spr_peppalette,
+	collect : [spr_shroomcollect, spr_cheesecollect, spr_tomatocollect, spr_sausagecollect, spr_pineapplecollect, spr_snickcollectible1, spr_eggplant_treasure, spr_eggcollect, spr_fishcollect, spr_baconcollect, spr_bananacollect, spr_shrimpcollect],
+	destroyable : [spr_towerblocksmall, spr_destroyable2],
+	giantcollect : [spr_giantpizza, spr_snickcollectible3],
+	bigcollect : [spr_pizzacollect1, spr_pizzacollect2, spr_pizzacollect3, spr_pizzacollect4, spr_pizzacollect5, spr_snickcollectible2],
+	bigdestroyable : [spr_towerblock, spr_bigbreakable],
+	metalb : [spr_metaltowerblock],
+	combotitle : [spr_combotitles],
+	music : {
+		entrance : [mu_entrance, 0],
+		entrance_secret : [mu_entrancesecret, 0],
+		escape : [mu_pizzatime, 0],
+		lap : [mu_chase, 0],
+		death : [mu_calzonification, 0],
+	},
+	sfx : {
+		taunt : [sfx_taunt],
+		supertaunt : [sfx_supertaunt],
+		collect : [sfx_collecttopping],
+		bigcollect : [sfx_collectpizza],
+		fireass : [sfx_scream5],
+	}
+}
+
 global.charDetails[characters.snick] = {
 	name : "Snick",
 	palette: spr_peppalette,
@@ -610,7 +642,7 @@ global.charDetails[characters.mario] = {
 		fireass : [sfx_scream5],
 	}
 }
-/* global.charDetails[characters.vigilante] = {
+global.charDetails[characters.vigilante] = {
 	name : "Vigilante",
 	machcolor1 : make_color_rgb(50, 0, 69),
 	machcolor2 : make_color_rgb(151, 71, 181),
@@ -637,7 +669,7 @@ global.charDetails[characters.mario] = {
 		fireass : [sfx_scream5],
 	}
 }
-*/
+
 global.color_array[characters.peppino] = [load_custom_colors(characters.peppino, "0"), load_custom_colors(characters.peppino, "1"), load_custom_colors(characters.peppino, "2")]
 global.color_array[characters.snick] = [load_custom_colors(characters.snick, "0"), load_custom_colors(characters.snick, "1"), load_custom_colors(characters.snick, "2")]
 global.color_array[characters.noise] = [load_custom_colors(characters.noise, "0"), load_custom_colors(characters.noise, "1"), load_custom_colors(characters.noise, "2")]

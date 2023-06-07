@@ -34,12 +34,14 @@ var _cy = tv_y + 117 + hud_posY + combo_posY;
 var _perc = global.combotime / 60;
 var _minX = _cx - 56;
 var _maxX = _cx + 59;
+combofill_index += 0.35
+if combofill_index = anim_end(image_number - 1, spr_tv_combobubblefill) combofill_index = 0
 combofill_x = lerp(combofill_x, _minX + ((_maxX - _minX) * _perc), 0.5);
 combofill_y = _cy;
 draw_sprite(spr_tv_combobubblefill, combofill_index, combofill_x, combofill_y);
 draw_sprite(spr_tv_combobubble, -1, _cx, _cy);
-draw_set_font(global.combofont2);
 draw_set_halign(0);
+draw_set_font(global.combofont2)
 draw_set_valign(0);
 var _tx = _cx - 64;
 var _ty = _cy - 12;

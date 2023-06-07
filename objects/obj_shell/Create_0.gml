@@ -1,6 +1,6 @@
 isOpen = false;
 isAutocompleteOpen = false;
-
+if room == SPOOK instance_destroy()
 shellSurface = noone;
 scrollSurface = noone;
 shellOriginX = 0;

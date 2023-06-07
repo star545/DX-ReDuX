@@ -83,14 +83,24 @@ function scr_player_climbwall()
 				key_jump = 0
 				movespeed = 10
 				state = states.mach2
-				if (wallspeed >= 12 && !skateboarding && character == characters.pizzelle)
+				if (wallspeed >= 12 && !skateboarding && character == characters.pizzelle || character == characters.vigilante || character == characters.snick)
 				{
 					state = states.mach3
 					sprite_index = spr_mach4
 					movespeed = wallspeed
+					if character == characters.vigilante || character == characters.snick {
+						if movespeed - 2 < 12 {
+							state = states.mach2
+							sprite_index = spr_mach
+						}
+						else {
+							sprite_index = spr_mach4
+							movespeed -= 2
+						}
+					}
 				}
 				image_index = 0
-				sprite_index = spr_walljumpstart
+				if character != characters.vigilante sprite_index = spr_walljumpstart
 				if skateboarding
 					sprite_index = spr_clownjump
 				vsp = -11

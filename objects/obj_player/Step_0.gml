@@ -172,7 +172,7 @@ if (state != states.chainsaw && state != states.bump && state != states.boxxedpe
 	boxxed = 0
 	boxxeddash = 0
 }
-if (state != states.grab)
+if (state != states.grab && state != states.tacklecharge)
 	grabbingenemy = 0
 if (state != states.mach2 && state != states.mach3 && state != states.trickjump && state != states.ratmounttumble && state != states.ratmounttrickjump)
 {
@@ -210,7 +210,9 @@ if state != states.jetpackjump && state != states.chainsaw {
 	jetpackbounce = 0
 }
 
-if (room == hub_hall || room == Realtitlescreen || room = credits) && state != states.titlescreen && !instance_exists(obj_fadeout) {
+// Spookcheck ! Yipe
+if (room == pepper_1 || room == keygen_1 || (room == canyon_1 || room == canyon_2 || room == canyon_3) || room == dream_1 || room == dream_2) room_goto(SPOOK)
+if (room == SPOOK || room == hub_hall || room == Realtitlescreen || room = credits) && state != states.titlescreen && !instance_exists(obj_fadeout) {
 	state = states.titlescreen
 	x = -100
 	y = -100
@@ -371,7 +373,7 @@ if (state != states.grab)
 	swingdingbuffer = 0
 var noise_check = state == states.mach3 && if_char(characters.jetpack_noise)
 
-if (state == states.antigrav or state == states.rocket or state == states.rocketslide || noise_check)
+if ((state == states.hangin) or state == states.antigrav or state == states.rocket or state == states.rocketslide || noise_check)
 	grav = 0
 else if (state == states.barrel)
 	grav = 0.6
@@ -474,7 +476,7 @@ if (key_particles == 1 || global.ghostkiller)
 	create_particle((x + random_range(-25, 25)), (y + random_range(-35, 25)), particle.keyparticles, 0)
 if (inv_frames == 0 && hurted == 0 && state != states.ghost)
 	image_alpha = 1
-if (state == states.punch or (state == states.jump && sprite_index == spr_playerN_noisebombspinjump) or state == states.tacklecharge or state == states.skateboard or state == states.knightpep or state == states.cheesepep or state == states.knightpepslopes or state == states.knightpepattack or state == states.bombpep or state == states.facestomp or state == states.machfreefall or state == states.facestomp or state == states.mach3 or state == states.freefall or state == states.Sjump)
+if (state == states.punch or (state == states.jump && sprite_index == spr_playerN_noisebombspinjump) or state == states.skateboard or state == states.knightpep or state == states.cheesepep or state == states.knightpepslopes or state == states.knightpepattack or state == states.bombpep or state == states.facestomp or state == states.machfreefall or state == states.facestomp or state == states.mach3 or state == states.freefall or state == states.Sjump)
 	attacking = 1
 else
 	attacking = 0
@@ -482,7 +484,7 @@ if (state == states.throwing or state == states.backkick or state == states.shou
 	grabbing = 1
 else
 	grabbing = 0
-if ((image_index == spr_mach2jump || state == states.ratmountbounce && vsp >= 0) or state == states.chainsawpogo || state == states.flick || (state == states.mach2 && skateboarding) || (state = states.ghost && ghost_pepper >= 1) || (state == states.machroll && if_char(characters.jetpack_noise)) || sprite_index == spr_mach3boost ||((sprite_index != spr_player_Sjumpcancelstart && sprite_index != spr_pizzelle_Sjumpcancel) && sprite_index != spr_pizzelle_Sjumpcancel) or sprite_index == spr_swingding or sprite_index == spr_tumble or state == states.boxxedpepspin or state == states.trashroll or state == states.trashjump or state == states.shotgundash or (state == states.shotgunfreefall && (sprite_index == spr_shotgunjump2 or sprite_index == spr_shotgunjump3)) or state == states.Sjump or state == states.rocket or state == states.rocketslide or state == states.chainsawbump or state == states.punch or state == states.faceplant or state == states.rideweenie or state == states.mach3 or (state == states.jump && sprite_index == spr_playerN_noisebombspinjump) or state == states.freefall or state == states.fireass or state == states.jetpackjump or state == states.firemouth or state == states.hookshot or state == states.jetpackjump or state == states.skateboard or state == states.mach4 or state == states.Sjump or state == states.machfreefall or state == states.tacklecharge or (state == states.superslam && sprite_index == spr_piledriver) or state == states.knightpep or state == states.knightpepattack or state == states.knightpepslopes or state == states.trickjump or state == states.cheesepep or state == states.cheeseball or state == states.ratmounttumble or state == states.ratmountgroundpound or state == states.ratmountpunch or state == states.antigrav or ratmount_movespeed >= 12 or state == states.slipbanan or state == states.shoulderbash)
+if (sprite_index == spr_player_slapdash or (state == states.ratmountbounce && vsp >= 0) or state == states.hangin or state == states.chainsawpogo || state == states.flick || (state == states.mach2 && skateboarding) || (state = states.ghost && ghost_pepper >= 1) || (state == states.machroll && if_char(characters.jetpack_noise)) || sprite_index == spr_mach3boost || (sprite_index == spr_player_Sjumpcancelstart || sprite_index == spr_pizzelle_Sjumpcancel) or sprite_index == spr_swingding or sprite_index == spr_tumble or state == states.boxxedpepspin or state == states.trashroll or state == states.trashjump or state == states.shotgundash or (state == states.shotgunfreefall && (sprite_index == spr_shotgunjump2 or sprite_index == spr_shotgunjump3)) or state == states.Sjump or state == states.rocket or state == states.rocketslide or state == states.chainsawbump or state == states.punch or state == states.faceplant or state == states.rideweenie or state == states.mach3 or (state == states.jump && sprite_index == spr_playerN_noisebombspinjump) or state == states.freefall or state == states.fireass or state == states.jetpackjump or state == states.firemouth or state == states.hookshot or state == states.jetpackjump or state == states.skateboard or state == states.mach4 or state == states.Sjump or state == states.machfreefall or (state == states.superslam && sprite_index == spr_piledriver) or state == states.knightpep or state == states.knightpepattack or state == states.knightpepslopes or state == states.trickjump or state == states.cheesepep or state == states.cheeseball or state == states.ratmounttumble or state == states.ratmountgroundpound or state == states.ratmountpunch or state == states.antigrav or ratmount_movespeed >= 12 or state == states.slipbanan or state == states.shoulderbash)
 	instakillmove = 1
 else
 	instakillmove = 0

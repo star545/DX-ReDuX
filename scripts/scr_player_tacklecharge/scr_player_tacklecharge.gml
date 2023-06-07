@@ -33,7 +33,7 @@ function scr_player_tacklecharge()
 		input_buffer_jump = 0
 	if (scr_solid((x + hsp), y) && (!(place_meeting((x + hsp), y, obj_slope))) && (!(place_meeting((x + hsp), y, obj_destructibles))))
 	{
-		if (baddiegrabbedID != obj_null)
+		if (baddiegrabbedID != obj_null && baddiegrabbedID != -4)
 		{
 			if (baddiegrabbedID.object_index == obj_player1 or baddiegrabbedID.object_index == obj_player2)
 			{
