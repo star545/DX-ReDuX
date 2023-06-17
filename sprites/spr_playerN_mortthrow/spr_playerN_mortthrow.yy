@@ -33,7 +33,7 @@
   "origin": 1,
   "parent": {
     "name": "The Noise",
-    "path": "folders/Sprites/Level structure/Collectible/Treasure/Player/The Noise.yy",
+    "path": "folders/Sprites/Player/The Noise.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

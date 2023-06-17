@@ -27,7 +27,7 @@
   "origin": 4,
   "parent": {
     "name": "Shotgun",
-    "path": "folders/Sprites/Level structure/Collectible/Treasure/Player/Peppino/Shotgun.yy",
+    "path": "folders/Sprites/Player/Peppino/Shotgun.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

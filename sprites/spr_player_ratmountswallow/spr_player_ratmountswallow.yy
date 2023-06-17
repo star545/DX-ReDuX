@@ -33,7 +33,7 @@
   "origin": 4,
   "parent": {
     "name": "Gustavo",
-    "path": "folders/Sprites/Level structure/Collectible/Treasure/Player/Gustavo.yy",
+    "path": "folders/Sprites/Player/Gustavo.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -27,7 +27,7 @@
   "origin": 0,
   "parent": {
     "name": "Mario",
-    "path": "folders/Sprites/Level structure/Collectible/Treasure/Player/Mario.yy",
+    "path": "folders/Sprites/Player/Mario.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

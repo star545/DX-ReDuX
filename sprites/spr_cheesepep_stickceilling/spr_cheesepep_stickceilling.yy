@@ -28,7 +28,7 @@
   "origin": 1,
   "parent": {
     "name": "Cheesepep",
-    "path": "folders/Sprites/Level structure/Collectible/Treasure/Player/Peppino/Cheesepep.yy",
+    "path": "folders/Sprites/Player/Peppino/Cheesepep.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

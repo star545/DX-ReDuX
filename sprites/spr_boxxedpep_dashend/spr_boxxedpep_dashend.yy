@@ -28,7 +28,7 @@
   "origin": 4,
   "parent": {
     "name": "Boxxedpep",
-    "path": "folders/Sprites/Level structure/Collectible/Treasure/Player/Peppino/Boxxedpep.yy",
+    "path": "folders/Sprites/Player/Peppino/Boxxedpep.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

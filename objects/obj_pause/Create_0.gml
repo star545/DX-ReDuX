@@ -354,14 +354,23 @@ char_options[characters.vigilante] = {
 
 char_options[characters.snick] = {
 	name : "SNICK",
-	tv_spr : spr_pizzy_tv,
+	tv_spr : spr_snickHUD,
 	idle_spr : spr_playerS_idle,
 	sel_spr : spr_playerS_taunt,
-	pal_spr : spr_peppalette,
+	pal_spr : spr_snickpalette,
 	sel_pal : 1,
 	pal_details : [
 	["CUSTOM : NOT EDITING", "Press up to start editing palettes!"],
 	["SNICK", "It's him!"],
+	["SNOTTY", "Armed to the teeth!"],
+	["GUTTER", "Crunchy!"],
+	["GOLD", "Ez P Rank GG No re"],
+	["SOFT", "Who likes cheese soft?"],
+	["GRUNCH", "Choose wisely."],
+	["GUMBOB", "Finally, a finished character!"],
+	["MARTIAN", "Pizza Tower OST - Extraterrestrial Wah Wahs"],
+	["MOLDY", "Moldy Vigilante molds you."],
+	["GHASTLY", "Ooouutlaaws beeewaaare..."],
 	]
 }
 

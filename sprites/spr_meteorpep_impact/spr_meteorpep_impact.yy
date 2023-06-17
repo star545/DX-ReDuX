@@ -44,7 +44,7 @@
   "origin": 4,
   "parent": {
     "name": "Meteorpep",
-    "path": "folders/Sprites/Level structure/Collectible/Treasure/Player/Peppino/Meteorpep.yy",
+    "path": "folders/Sprites/Player/Peppino/Meteorpep.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

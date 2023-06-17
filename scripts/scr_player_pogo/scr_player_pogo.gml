@@ -49,6 +49,12 @@ function scr_player_pogo()
 		movespeed = pogospeed
 		pogospeedprev = 1
 	}
+	if (sprite_index == spr_playerN_pogofallmach || sprite_index == spr_playerN_pogofall) && key_jump2 {
+		vsp = -15
+		state = states.jump
+		sprite_index = spr_playerN_noisebombspinjump
+		image_index = 0
+	}
 	if (floor(image_index) == (image_number - 1) && (sprite_index == spr_playerN_pogobounce or sprite_index == spr_playerN_pogofallmach or sprite_index == spr_playerN_pogobouncemach or sprite_index == spr_playerN_pogostart))
 	{
 		if (pogochargeactive == 1)

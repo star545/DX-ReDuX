@@ -28,7 +28,7 @@
   "origin": 1,
   "parent": {
     "name": "Knightpep",
-    "path": "folders/Sprites/Level structure/Collectible/Treasure/Player/Peppino/Knightpep.yy",
+    "path": "folders/Sprites/Player/Peppino/Knightpep.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

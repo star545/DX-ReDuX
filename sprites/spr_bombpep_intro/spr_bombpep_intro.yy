@@ -40,7 +40,7 @@
   "origin": 4,
   "parent": {
     "name": "Bombpep",
-    "path": "folders/Sprites/Level structure/Collectible/Treasure/Player/Peppino/Bombpep.yy",
+    "path": "folders/Sprites/Player/Peppino/Bombpep.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -12,7 +12,8 @@ function scr_player_superslam()
 	}
 	if (sprite_index == spr_piledriver && vsp >= 0)
 		vsp += 0.5
-	if (grounded && (!(place_meeting(x, (y + 1), obj_destructibles))) && sprite_index == spr_piledriver && vsp > 0)
+		
+	if (grounded && (!(place_meeting(x, (y + 1), obj_destructibles) && place_meeting(x, (y + 1), obj_metalblock))) && sprite_index == spr_piledriver && vsp > 0)
 	{
 		scr_soundeffect(sfx_groundpound)
 		sprite_index = spr_piledriverland

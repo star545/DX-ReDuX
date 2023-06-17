@@ -58,33 +58,6 @@ function state_player_jump()
 			jumpstop = 1
 		}
 	}
-	if (character == characters.jetpack_noise || character == characters.noise)
-	{
-		if (key_jump && wallclingcooldown == 10)
-		{
-			if place_meeting_solid(x + xscale, y)
-			{
-				scr_soundeffect(sfx_step)
-				sprite_index = spr_playerN_wallclingstart
-				image_index = 0
-				state = states.hang
-				xscale *= -1
-				vsp = 0
-				doublejump = 0
-			}
-			else if ((!doublejump) && sprite_index != spr_freefall && sprite_index != spr_facestomp)
-			{
-				scr_soundeffect(sfx_woosh)
-				sprite_index = spr_playerN_doublejump
-				image_index = 0
-				jumpstop = 0
-				vsp = -9
-				doublejump = 1
-				particle_set_scale(particle.highjumpcloud2, xscale, 1)
-				create_particle(x, y, particle.highjumpcloud2, 0)
-			}
-		}
-	}
 	if (global.mort && (sprite_index == spr_mortdoublejump or sprite_index == spr_mortdoublejumpstart))
 	{
 		if (vsp > 6)

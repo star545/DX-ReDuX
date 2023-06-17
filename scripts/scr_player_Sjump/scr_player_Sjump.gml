@@ -30,7 +30,8 @@ function scr_player_Sjump()
 	if !nerfed_sjump
 	sjumpvsp -= 0.1
 	else 
-	sjumpvsp += 0.5
+	if character != characters.snick sjumpvsp += 0.5
+	if character == characters.snick && nerfed_sjump sjumpvsp += 0.3
 	if (sprite_index == spr_player_supersidejump)
 	{
 		if (a < 25)
@@ -61,7 +62,7 @@ function scr_player_Sjump()
 		state = states.Sjumpland
 		machhitAnim = 0
 	}
-	else if ((key_slap2 || key_attack2) && !nerfed_sjump && sprite_index != spr_superspringplayer && sprite_index != spr_sjumpcancel_start && sprite_index != spr_player_ratmountwalljump)
+	else if ((key_slap2 || key_attack2) && sprite_index != spr_superspringplayer && sprite_index != spr_sjumpcancel_start && sprite_index != spr_player_ratmountwalljump)
 	{
 		if (move != 0)
 			xscale = move
@@ -70,6 +71,7 @@ function scr_player_Sjump()
 		if (if_char(characters.noise)) || (global.sjumpstyle == 1) {
 			vsp = -5
 			movespeed = 12
+		
 			flash = true;
 			jumpstop = true
 			image_index = 0
@@ -80,7 +82,6 @@ function scr_player_Sjump()
 			
 		}
 	}
-	if nerfed_sjump scr_dograb()
 	if (sprite_index == spr_sjumpcancel_start)
 	{
 		vsp = 0
@@ -106,7 +107,7 @@ function scr_player_Sjump()
             sprite_index = spr_sjumpcancel
             if global.sjumpstyle == 2
                 sprite_index = spr_player_supersidejump
-			if if_char(characters.pizzelle) movespeed = savedmvsp
+			if if_char(characters.pizzelle) || if_char(characters.snick) movespeed = savedmvsp
             state = states.mach3
             with (instance_create(x, y, obj_crazyruneffect))
                 image_xscale = other.xscale
@@ -154,7 +155,7 @@ function scr_player_Sjump()
 		jumpstop = 0
 		vsp = -15
 		state = states.jump
-		sprite_index = spr_player_sidesuperjumpcancel
+		sprite_index = spr_player_mach2jump
 		image_index = 0
 		with (instance_create(x, y, obj_jumpdust))
 			image_xscale = other.xscale

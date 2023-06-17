@@ -28,7 +28,7 @@
   "origin": 4,
   "parent": {
     "name": "Character select",
-    "path": "folders/Sprites/Level structure/Collectible/Treasure/Player/Character select.yy",
+    "path": "folders/Sprites/Player/Character select.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

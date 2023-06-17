@@ -477,7 +477,7 @@ global.charDetails[characters.bastard] = {
 
 global.charDetails[characters.snick] = {
 	name : "Snick",
-	palette: spr_peppalette,
+	palette: spr_snickpalette,
 	collect : [spr_snickcollectible1],
 	bigcollect : [spr_snickcollectible2],
 	giantcollect : [spr_snickcollectible3],

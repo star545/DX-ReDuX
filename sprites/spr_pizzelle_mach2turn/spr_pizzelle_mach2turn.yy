@@ -38,7 +38,7 @@
   "origin": 4,
   "parent": {
     "name": "Pizzelle",
-    "path": "folders/Sprites/Level structure/Collectible/Treasure/Player/Pizzelle.yy",
+    "path": "folders/Sprites/Player/Pizzelle.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

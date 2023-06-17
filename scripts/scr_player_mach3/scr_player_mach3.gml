@@ -79,7 +79,7 @@ function scr_player_mach3()
 				jetpackin = false
 				jumpstop = 0
 				vsp = -15
-				sprite_index = spr_player_sidesuperjumpcancel
+				sprite_index = spr_player_mach2jump
 				image_index = 0
 				with (instance_create(x, y, obj_jumpdust))
 					image_xscale = other.xscale

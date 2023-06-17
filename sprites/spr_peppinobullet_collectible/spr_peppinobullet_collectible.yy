@@ -36,7 +36,7 @@
   "origin": 1,
   "parent": {
     "name": "Bullet",
-    "path": "folders/Sprites/Level structure/Collectible/Treasure/Player/Peppino/Bullet.yy",
+    "path": "folders/Sprites/Player/Peppino/Bullet.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -38,7 +38,7 @@
   "origin": 4,
   "parent": {
     "name": "Vigilante",
-    "path": "folders/Sprites/Level structure/Collectible/Treasure/Player/Vigilante.yy",
+    "path": "folders/Sprites/Player/Vigilante.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Peppino",
-    "path": "folders/Sprites/Level structure/Collectible/Treasure/Player/Peppino.yy",
+    "path": "folders/Sprites/Player/Peppino.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

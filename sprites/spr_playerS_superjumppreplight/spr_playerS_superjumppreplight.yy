@@ -27,7 +27,7 @@
   "origin": 4,
   "parent": {
     "name": "Snick",
-    "path": "folders/Sprites/Level structure/Collectible/Treasure/Player/Snick.yy",
+    "path": "folders/Sprites/Player/Snick.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

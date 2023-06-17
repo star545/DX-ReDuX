@@ -38,7 +38,10 @@ function scr_player_Sjumpprep()
 		instance_create(x, y, obj_explosioneffect)
 		sprite_index = spr_superjump
 		state = states.Sjump
+		if character == characters.snick nerfed_sjump = true
 		vsp = -17
+		if character == characters.snick vsp = -23
+		if character == characters.snick sjumpvsp = -23
 		image_index = 0
 	}
 	

@@ -1057,6 +1057,8 @@ function scr_characterspr()
 		spr_mrpinch = spr_playerS_mrpinch
 		spr_slipbanan1 = spr_playerS_slipbanan1
 		spr_slipbanan2 = spr_playerS_slipbanan2
+		
+		spr_palette = spr_snickpalette
 	}
 	
 	
