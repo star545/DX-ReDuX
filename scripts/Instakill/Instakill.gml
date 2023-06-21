@@ -87,7 +87,13 @@ function Instakill(_xscale = xscale)
 						if (abs(hithsp) < 10) hithsp = (_xscale * 10)
 						hitvsp = -5
 						if global.arena_perks.impact hithsp *= 1.5
-						
+						if other.state == states.handstandjump && other.key_down {
+							hithsp = 0
+							hitvsp = 20
+							shoulderbashed++
+							if shoulderbashed > 1 baddie_destroy_points(id)
+			
+						}
 						if other.state == states.handstandjump && other.key_up {
 							hithsp = 0
 							hitvsp = -20
@@ -105,11 +111,6 @@ function Instakill(_xscale = xscale)
 			
 			
         }
-		if (state == states.chainsawbump && (!global.kungfu))
-		{
-			sprite_index = spr_player_chainsawhit
-			image_index = 0
-		}
 		
 		other.baddieID.hitLag = lag
 		other.baddieID.hitX = other.baddieID.x
@@ -174,7 +175,7 @@ function Instakill(_xscale = xscale)
 			bID.movespeed = abs(bID.hithsp)
 		}
 		
-		if state == states.handstandjump && key_up {
+		if state == states.handstandjump && key_up && sprite_index != spr_playerN_spin {
 			bID.hithsp = 0
 			bID.hitvsp = -20
 			bID.shoulderbashed++

@@ -197,7 +197,11 @@ function scr_player_handstandjump()
 		}
 		if key_slap2 && (if_char(characters.noise) || if_char(characters.jetpack_noise)) {
 			movespeed = movecap(movespeed, 10)
-			state = states.faceplant;		
+			if sprite_index != spr_playerN_spinstart && sprite_index != spr_playerN_spin {
+				movespeed += 3
+				sprite_index = spr_playerN_spinstart;		
+				state = states.handstandjump
+			}
 		    with (instance_create(x, y, obj_jumpdust))
 		        image_xscale = other.xscale;
 		

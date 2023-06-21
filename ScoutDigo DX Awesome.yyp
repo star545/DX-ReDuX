@@ -5951,6 +5951,7 @@
     {"id":{"name":"war_7","path":"rooms/war_7/war_7.yy",},},
     {"id":{"name":"space_11","path":"rooms/space_11/space_11.yy",},},
     {"id":{"name":"chateau_2b","path":"rooms/chateau_2b/chateau_2b.yy",},},
+    {"id":{"name":"spr_tv_snick","path":"sprites/spr_tv_snick/spr_tv_snick.yy",},},
     {"id":{"name":"rm_scrolltest","path":"rooms/rm_scrolltest/rm_scrolltest.yy",},},
     {"id":{"name":"spr_npcbubble_close","path":"sprites/spr_npcbubble_close/spr_npcbubble_close.yy",},},
     {"id":{"name":"factory_4","path":"rooms/factory_4/factory_4.yy",},},

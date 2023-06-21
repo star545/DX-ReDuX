@@ -776,6 +776,7 @@
     {"name":"bg_waferclouds","order":26,"path":"sprites/bg_waferclouds/bg_waferclouds.yy",},
     {"name":"spr_pizzasona5throw","order":152,"path":"sprites/spr_pizzasona5throw/spr_pizzasona5throw.yy",},
     {"name":"spr_pizzasona50trans","order":136,"path":"sprites/spr_pizzasona50trans/spr_pizzasona50trans.yy",},
+    {"name":"spr_tv_snick","order":1,"path":"sprites/spr_tv_snick/spr_tv_snick.yy",},
     {"name":"spr_pizzasona55","order":149,"path":"sprites/spr_pizzasona55/spr_pizzasona55.yy",},
     {"name":"tower_arenaroom","order":1,"path":"rooms/tower_arenaroom/tower_arenaroom.yy",},
     {"name":"Loadiingroom","order":4,"path":"rooms/Loadiingroom/Loadiingroom.yy",},

@@ -265,7 +265,6 @@ switch state
 		}
 		break
 }
-
 var change_pos = 0
 if (obj_player.x > (room_width - 224) && obj_player.y < 187)
 	change_pos = 1
