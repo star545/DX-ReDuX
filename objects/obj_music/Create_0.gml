@@ -143,7 +143,7 @@ room_arr = [
 	
 	
 	[champ_1, mu_champ, mu_champsecret, false],
-	[credits, mu_champ, mu_champsecret, false],
+	[credits, mu_sussus, mu_champsecret, false],
 	
 	// Extra
 	[strongcold_arena, mu_strongcold, mu_strongcold, false],

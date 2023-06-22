@@ -54,6 +54,8 @@
     {"name":"inst_4A19A918","path":"rooms/tower_entrancehall/tower_entrancehall.yy",},
     {"name":"inst_326714EF","path":"rooms/tower_entrancehall/tower_entrancehall.yy",},
     {"name":"inst_8D786DB","path":"rooms/tower_entrancehall/tower_entrancehall.yy",},
+    {"name":"inst_1F5BB2F1","path":"rooms/tower_entrancehall/tower_entrancehall.yy",},
+    {"name":"inst_1F992761","path":"rooms/tower_entrancehall/tower_entrancehall.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -109,6 +111,8 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"par_warpdoors","path":"objects/par_warpdoors/par_warpdoors.yy",},"propertyId":{"name":"targetRoom","path":"objects/par_warpdoors/par_warpdoors.yy",},"value":"tower_broomcloset",},
           ],"rotation":0.0,"scaleX":2.0,"scaleY":1.5,"x":3040.0,"y":416.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_8D786DB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_doorD","path":"objects/obj_doorD/obj_doorD.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3072.0,"y":480.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1F5BB2F1","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1760.0,"y":640.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1F992761","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_doorB","path":"objects/obj_doorB/obj_doorB.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1792.0,"y":704.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_3","depth":100,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_Intensity","type":0,"value":"1",},

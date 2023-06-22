@@ -436,7 +436,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.4.0.84",
+    "IDEVersion": "2023.2.1.75",
   },
   "resources": [
     {"id":{"name":"spr_plug","path":"sprites/spr_plug/spr_plug.yy",},},
@@ -2473,6 +2473,7 @@
     {"id":{"name":"spr_motocycle","path":"sprites/spr_motocycle/spr_motocycle.yy",},},
     {"id":{"name":"spr_motcycledebris","path":"sprites/spr_motcycledebris/spr_motcycledebris.yy",},},
     {"id":{"name":"spr_donthit","path":"sprites/spr_donthit/spr_donthit.yy",},},
+    {"id":{"name":"mu_sussus","path":"sounds/mu_sussus/mu_sussus.yy",},},
     {"id":{"name":"spr_ruinfallingbrick","path":"sprites/spr_ruinfallingbrick/spr_ruinfallingbrick.yy",},},
     {"id":{"name":"spr_treasureshadow","path":"sprites/spr_treasureshadow/spr_treasureshadow.yy",},},
     {"id":{"name":"spr_keysign2","path":"sprites/spr_keysign2/spr_keysign2.yy",},},

@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Room structure",
-    "path": "folders/Objects/Room structure.yy",
+    "name": "Warps",
+    "path": "folders/Objects/Room structure/Generic/Warps.yy",
   },
   "parentObjectId": {
     "name": "par_doortrig",
