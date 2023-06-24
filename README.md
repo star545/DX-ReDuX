@@ -1,10 +1,9 @@
-# DX-ReDuX
-Redux Real
+# DX-ReDuX star's fork
+Redux true
 
 
 
 
-dist why'd you make this open source..
-PTO Refrence.. - nails
+DX Redux on the source 2 engine 
 
-Pizza Tower Undertale update
+Pizza Tower source 2 update
